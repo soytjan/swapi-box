@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <Header>
+    <div>
       <h1>SWAPI box</h1>
       <button><NavLink to='/favorites'>Favorites</NavLink></button>
-    </Header>
+    </div>
   )
 }
 
