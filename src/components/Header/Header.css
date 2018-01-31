@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline");
+.header {
+  height: 150px;
+  background-image: url("./starrynight1.jpg");
+  background-color: turquoise;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em; }
+  .header h1 {
+    color: white;
+    font-family: "Bungee Inline", cursive; }
