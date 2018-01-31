@@ -14,7 +14,7 @@ const Main = () => {
         <Route path='/people' component={People} />
         <Route path='/vehicles' component={Vehicles} />
         <Route path='/planets' component={Planets} />
-        <Route path='/planets' component={Favorites} />
+        <Route path='/favorites' component={Favorites} />
       </Switch>
     </main>
   )
