@@ -10,11 +10,11 @@ const Main = () => {
   return (
     <main>
       <Switch>
-        <Route exact path='/' component={Welcome} />
-        <Route path='/people' component={People} />
-        <Route path='/vehicles' component={Vehicles} />
-        <Route path='/planets' component={Planets} />
-        <Route path='/favorites' component={Favorites} />
+        <Route exact path='/' render={() => (<Welcome />)} />
+        <Route path='/people' render={() => (<People />)} />
+        <Route path='/vehicles' render={() => (<Vehicles />)} />
+        <Route path='/planets' render={() => (<Planets />)} />
+        <Route path='/favorites' render={() => (<Favorites />)} />
       </Switch>
     </main>
   )
