@@ -24,6 +24,36 @@ export const getApiData = async (request) => {
   return data;
 } 
 
+// Do we make the getApiData above into smaller divided up functions like the ones below? 
+
+// const getPeopleData = async () => {
+//   const url = 'https://swapi.co/api/people/';
+//   const response = await fetchAndParseApiData(url);
+  
+//   return await cleanPeopleData(response);
+// }
+
+// const getVehiclesData = async () => {
+//   const url = 'https://swapi.co/api/vehicles/';
+//   const response = await fetchAndParseApiData(url);
+  
+//   return await cleanVehiclesData(response);
+// }
+
+// const getPlanetsData = async () => {
+//   const url = 'https://swapi.co/api/planets/';
+//   const response = await fetchAndParseApiData(url);
+  
+//   return await cleanPlanetsData(response);
+// }
+
+// const getFilmsData = async () => {
+//   const url = 'https://swapi.co/api/films/';
+//   const response = await fetchAndParseApiData(url);
+
+//   return await cleanFilmData(response);
+// }
+
 export const fetchAndParseApiData = async (url) => {
   const response = await fetch(url);
 
