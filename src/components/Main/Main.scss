@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+main {
+  background-color: $main-bg-color;
+  padding: 30px 20px;
+}
+
+.card-box {
+  min-height: 700px;
+  background-color: $box-bg-color;
+}

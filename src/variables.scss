@@ -1,8 +1,18 @@
 
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed');
 
 
 // Colors
+$header-color: white;
+$btn-1-color: #6A5671;
+$btn-2-color: #41769F;
+$btn-3-color: #8DC8AA;
+$fav-btn-color: #787878;
+
+$main-bg-color: #787878;
+$box-bg-color: #DCDCDC;
 
 // Fonts
 $header-font: 'Bungee Inline', cursive;
+$main-font: 'Roboto', sans-serif;
+$sub-font: 'Roboto Condensed', sans-serif;

@@ -3,9 +3,9 @@
   display: flex;
   justify-content: center;
   /* This is a magic number based on the context in which this snippet is used and effects the perspective */
-  height: 800px;
+  height: 400px;
   /* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
-  perspective: 400px; }
+  perspective: 250px; }
 
 .scroll-text {
   color: yellow;
