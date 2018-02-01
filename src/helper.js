@@ -14,6 +14,9 @@ export const getApiData = async (request) => {
     case 'planets':
       data = await cleanPlanetsData(response);
       break;
+    case 'films':
+      data = await cleanFilmData(response);
+      break;
     default:
       console.log('error!')      
   }
