@@ -1,15 +1,15 @@
 export const getApiData = async (request) => {
-  const url = `https://swapi.co/api/${request}`;
-  const initialFetch = await fetch(url);
-  const response = await initialFetch.json();
+  const url = `https://swapi.co/api/${request}/`;
+  const response = await fetchAndParseApiData(url);
   let data;
-
+  console.log('request', request)
   switch (request) {
     case 'people':
       data = await cleanPeopleData(response);
       break;
     case 'vehicles':
       data = await cleanVehiclesData(response);
+      console.log('vehicles data respons');
       break;
     case 'planets':
       data = await cleanPlanetsData(response);
@@ -22,8 +22,47 @@ export const getApiData = async (request) => {
   }
 
   return data;
+} 
 
-}  
+// Do we make the getApiData above into smaller divided up functions like the ones below? 
+
+// const getPeopleData = async () => {
+//   const url = 'https://swapi.co/api/people/';
+//   const response = await fetchAndParseApiData(url);
+  
+//   return await cleanPeopleData(response);
+// }
+
+// const getVehiclesData = async () => {
+//   const url = 'https://swapi.co/api/vehicles/';
+//   const response = await fetchAndParseApiData(url);
+  
+//   return await cleanVehiclesData(response);
+// }
+
+// const getPlanetsData = async () => {
+//   const url = 'https://swapi.co/api/planets/';
+//   const response = await fetchAndParseApiData(url);
+  
+//   return await cleanPlanetsData(response);
+// }
+
+// const getFilmsData = async () => {
+//   const url = 'https://swapi.co/api/films/';
+//   const response = await fetchAndParseApiData(url);
+
+//   return await cleanFilmData(response);
+// }
+
+export const fetchAndParseApiData = async (url) => {
+  const response = await fetch(url);
+
+  if(response.status >= 400) {
+    throw(new Error('Error loading Star Wars facts!'));
+  } else {
+    return await response.json();
+  }
+} 
 
 export const cleanFilmData = (filmData) => {
   return filmData.results.map(film => {
@@ -36,8 +75,7 @@ export const cleanFilmData = (filmData) => {
 }
 
 const getHomeworldData = async (url) => {
-  const initialFetch = await fetch(url)
-  const homeworldObj = await initialFetch.json()
+  const homeworldObj = await fetchAndParseApiData(url);
 
   return {
     homeworld: homeworldObj.name,
@@ -45,12 +83,22 @@ const getHomeworldData = async (url) => {
   }
 }
 
+// refactor get Species Data and residents
 const getSpeciesData = (urls) => {
   const unresolvedPromises = urls.map(async (url) => {
-    const initialFetch = await fetch(url)
-    const species = await initialFetch.json()
+    const species = await fetchAndParseApiData(url);
 
     return species.name;
+  })
+
+  return Promise.all(unresolvedPromises);
+}
+
+export const getPlanetResidents = (urls) => {
+  const unresolvedPromises = urls.map( async (url) => {
+    const resident = await fetchAndParseApiData(url);
+
+    return resident.name;
   })
 
   return Promise.all(unresolvedPromises);
@@ -74,6 +122,7 @@ export const cleanPeopleData = (peopleData) => {
 }
 
 export const cleanVehiclesData = (vehicleData) => {
+  console.log('clean vehicles method is running')
   return vehicleData.results.map(vehicle => {
     return {
       name: vehicle.name,
@@ -84,16 +133,7 @@ export const cleanVehiclesData = (vehicleData) => {
   })
 }
 
-export const getPlanetResidents = (urls) => {
-  const unresolvedPromises = urls.map( async (url) => {
-    const initialFetch = await fetch(url);
-    const resident = await initialFetch.json();
 
-    return resident.name;
-  })
-
-  return Promise.all(unresolvedPromises);
-}
 
 export const cleanPlanetsData = (planetData) => {
   const planets = planetData.results.map( async (planet) => {
@@ -110,4 +150,7 @@ export const cleanPlanetsData = (planetData) => {
 
   return Promise.all(planets);
 }
+
+// export { cleanPlanetsData, } -- doublecheck
+// google export (where names have to match)/ export default 
 

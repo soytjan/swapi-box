@@ -14,13 +14,25 @@ class App extends Component {
       vehicles: [],
       planets: [],
       favorites: [],
+      films: [],
     }
   }
 
+  componentDidMount() {
+    // call getApiData(request);
+
+    // run a random function on it
+
+    // set state
+  }
+
+  chooseRandFilmCrawl(films) {
+    // gen rand number between 0-6
+    // return random film crawl
+  }
+
   handleNavClick = async (request) => {
-    console.log('clicked');
-    console.log(request);
-    console.log(this);
+    console.log('request', request);
     const data = await getApiData(request);
 
     this.setState({[request]: data});
