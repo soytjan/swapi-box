@@ -20,6 +20,14 @@ describe('HELPER', () => {
     // const expectedParams = 'url'
   })
 
+  // test makes calls with expected params
+  // don't test that fetch works -- only need to test what I have written
+  // ex test taht vehicles mock fn was called 
+  // check that data that you're getting back
+  // mock out full response from the API to check that cleaner is working
+  // test that fetch works once => expect that it's going to return 
+  // each helper function needs to have it's own 
+
   it('makes a clean array of film data given to it', () => {
     const result = cleanFilmData(mockFilmData)
 

@@ -1,7 +1,8 @@
 export const getApiData = async (request) => {
-  const url = `https://swapi.co/api/${request}`;
-  const initialFetch = await fetch(url);
-  const response = await initialFetch.json();
+  const url = `https://swapi.co/api/${request}/`;
+  // const initialFetch = await fetch(url);
+  // const response = await initialFetch.json();
+  const response = await fetchAndParseApiData(url);
   let data;
 
   switch (request) {
@@ -22,8 +23,14 @@ export const getApiData = async (request) => {
   }
 
   return data;
+} 
 
-}  
+const fetchAndParseApiData = async (url) => {
+  const initialFetch = await fetch(url);
+  const response = await initialFetch.json();
+
+  return response;
+} 
 
 export const cleanFilmData = (filmData) => {
   return filmData.results.map(film => {
@@ -36,8 +43,7 @@ export const cleanFilmData = (filmData) => {
 }
 
 const getHomeworldData = async (url) => {
-  const initialFetch = await fetch(url)
-  const homeworldObj = await initialFetch.json()
+  const homeworldObj = await fetchAndParseApiData(url);
 
   return {
     homeworld: homeworldObj.name,
@@ -47,8 +53,7 @@ const getHomeworldData = async (url) => {
 
 const getSpeciesData = (urls) => {
   const unresolvedPromises = urls.map(async (url) => {
-    const initialFetch = await fetch(url)
-    const species = await initialFetch.json()
+    const species = await fetchAndParseApiData(url);
 
     return species.name;
   })
@@ -86,8 +91,7 @@ export const cleanVehiclesData = (vehicleData) => {
 
 export const getPlanetResidents = (urls) => {
   const unresolvedPromises = urls.map( async (url) => {
-    const initialFetch = await fetch(url);
-    const resident = await initialFetch.json();
+    const resident = await fetchAndParseApiData(url);
 
     return resident.name;
   })
@@ -110,4 +114,7 @@ export const cleanPlanetsData = (planetData) => {
 
   return Promise.all(planets);
 }
+
+// export { cleanPlanetsData, } -- doublecheck
+// google export (where names have to match)/ export default 
 

@@ -18,9 +18,7 @@ class App extends Component {
   }
 
   handleNavClick = async (request) => {
-    console.log('clicked');
-    console.log(request);
-    console.log(this);
+    console.log('request', request);
     const data = await getApiData(request);
 
     this.setState({[request]: data});
