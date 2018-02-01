@@ -1,16 +1,15 @@
 export const getApiData = async (request) => {
   const url = `https://swapi.co/api/${request}/`;
-  // const initialFetch = await fetch(url);
-  // const response = await initialFetch.json();
   const response = await fetchAndParseApiData(url);
   let data;
-
+  console.log('request', request)
   switch (request) {
     case 'people':
       data = await cleanPeopleData(response);
       break;
     case 'vehicles':
       data = await cleanVehiclesData(response);
+      console.log('vehicles data respons');
       break;
     case 'planets':
       data = await cleanPlanetsData(response);
@@ -25,11 +24,14 @@ export const getApiData = async (request) => {
   return data;
 } 
 
-const fetchAndParseApiData = async (url) => {
-  const initialFetch = await fetch(url);
-  const response = await initialFetch.json();
+export const fetchAndParseApiData = async (url) => {
+  const response = await fetch(url);
 
-  return response;
+  if(response.status >= 400) {
+    throw(new Error('Error loading Star Wars facts!'));
+  } else {
+    return await response.json();
+  }
 } 
 
 export const cleanFilmData = (filmData) => {
@@ -51,11 +53,22 @@ const getHomeworldData = async (url) => {
   }
 }
 
+// refactor get Species Data and residents
 const getSpeciesData = (urls) => {
   const unresolvedPromises = urls.map(async (url) => {
     const species = await fetchAndParseApiData(url);
 
     return species.name;
+  })
+
+  return Promise.all(unresolvedPromises);
+}
+
+export const getPlanetResidents = (urls) => {
+  const unresolvedPromises = urls.map( async (url) => {
+    const resident = await fetchAndParseApiData(url);
+
+    return resident.name;
   })
 
   return Promise.all(unresolvedPromises);
@@ -79,6 +92,7 @@ export const cleanPeopleData = (peopleData) => {
 }
 
 export const cleanVehiclesData = (vehicleData) => {
+  console.log('clean vehicles method is running')
   return vehicleData.results.map(vehicle => {
     return {
       name: vehicle.name,
@@ -89,15 +103,7 @@ export const cleanVehiclesData = (vehicleData) => {
   })
 }
 
-export const getPlanetResidents = (urls) => {
-  const unresolvedPromises = urls.map( async (url) => {
-    const resident = await fetchAndParseApiData(url);
 
-    return resident.name;
-  })
-
-  return Promise.all(unresolvedPromises);
-}
 
 export const cleanPlanetsData = (planetData) => {
   const planets = planetData.results.map( async (planet) => {
