@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+nav {
+  padding: 20px 0;
+
+  button {
+    padding: 5px 12px;
+    border-radius: 10px;
+  }
+}
+
+.btn-box {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-1 {
+  background-color: $btn-1-color;
+}
+
+.btn-2 {
+  background-color: $btn-2-color;
+}
+
+.btn-3 {
+  background-color: $btn-3-color;
+}

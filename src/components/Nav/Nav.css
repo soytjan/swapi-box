@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
+nav {
+  padding: 20px 0; }
+  nav button {
+    padding: 5px 12px;
+    border-radius: 10px; }
+
+.btn-box {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between; }
+
+.btn-1 {
+  background-color: #6A5671; }
+
+.btn-2 {
+  background-color: #41769F; }
+
+.btn-3 {
+  background-color: #8DC8AA; }

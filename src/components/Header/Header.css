@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Inline");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
 .header {
   height: 150px;
   background-image: url("./starrynight1.jpg");
@@ -10,3 +10,6 @@
   .header h1 {
     color: white;
     font-family: "Bungee Inline", cursive; }
+
+.fav-btn {
+  background-color: #787878; }
