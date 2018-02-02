@@ -1,27 +1,25 @@
 export const getApiData = async (request) => {
   const url = `https://swapi.co/api/${request}/`;
   const response = await fetchAndParseApiData(url);
-  let data;
-  console.log('request', request)
+
   switch (request) {
     case 'people':
-      data = await cleanPeopleData(response);
+      return await cleanPeopleData(response);
       break;
     case 'vehicles':
-      data = await cleanVehiclesData(response);
+      return await cleanVehiclesData(response);
       console.log('vehicles data respons');
       break;
     case 'planets':
-      data = await cleanPlanetsData(response);
+      return await cleanPlanetsData(response);
       break;
     case 'films':
-      data = await cleanFilmData(response);
+      return await cleanFilmData(response);
       break;
     default:
       console.log('error!')      
   }
 
-  return data;
 } 
 
 // Do we make the getApiData above into smaller divided up functions like the ones below? 
