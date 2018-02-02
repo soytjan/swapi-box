@@ -2,7 +2,6 @@ import {cleanFilmData,
         cleanPeopleData,
         cleanVehiclesData,
         cleanPlanetsData,
-        getPlanetResidents,
         getApiData,
         fetchAndParseApiData} from './helper.js';
 
