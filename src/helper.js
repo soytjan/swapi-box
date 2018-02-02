@@ -8,7 +8,6 @@ export const getApiData = async (request) => {
       break;
     case 'vehicles':
       return await cleanVehiclesData(response);
-      console.log('vehicles data respons');
       break;
     case 'planets':
       return await cleanPlanetsData(response);

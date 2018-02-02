@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { getApiData } from '../../helper';
+import { getPeopleData, getVehiclesData, getPlanetsData, getFilmData } from '../../helper';
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Header from '../Header/Header';
@@ -14,7 +14,7 @@ class App extends Component {
       vehicles: [],
       planets: [],
       favorites: [],
-      films: [],
+      films: {},
     }
   }
 
@@ -26,10 +26,30 @@ class App extends Component {
     // set state
   }
 
-  chooseRandFilmCrawl(films) {
-    // gen rand number between 0-6
-    // return random film crawl
-  }
+  // handleFilmRoute = async () => {
+  //   const films = await getFilmData();
+  //   const randNum = Math.floor(Math.random() * 7 + 1);
+
+  //   this.setState({films: films[randNum]});
+  // }
+
+  // handlePeopleRoute = async () => {
+  //   const people = await getPeopleData();
+
+  //   this.setState({ people });
+  // }
+
+  // handleVehiclesRoute = async () => {
+  //   const vehicles = await getVehiclesData();
+
+  //   this.setState({ vehicles });
+  // }
+
+  // handlePlanetsRoute = async () => {
+  //   const planets = await getPlanetsData();
+
+  //   this.setState({ planets });
+  // }
 
   handleNavClick = async (request) => {
     console.log('request', request);
@@ -42,8 +62,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Nav onClick={this.handleNavClick}/>
-        <Main />
+        <Nav 
+          onPeopleClick={this.handlePeopleRoute}
+          onPlanetsClick={this.handlePlanetsRoute}
+          onVehiclesClick={this.handleVehiclesRoute} />
+        <Main 
+          people={this.state.people}
+          vehicles={this.state.vehicles}
+          planets={this.state.planets} />
       </div>
     );
   }
