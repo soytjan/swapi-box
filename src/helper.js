@@ -5,18 +5,15 @@ export const getApiData = async (request) => {
   switch (request) {
     case 'people':
       return await cleanPeopleData(response);
-      break;
     case 'vehicles':
       return await cleanVehiclesData(response);
-      break;
     case 'planets':
       return await cleanPlanetsData(response);
-      break;
     case 'films':
       return await cleanFilmData(response);
-      break;
     default:
-      console.log('error!')      
+      console.log('error!'); 
+      break;     
   }
 
 } 

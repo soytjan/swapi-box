@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { getPeopleData, getVehiclesData, getPlanetsData, getFilmData } from '../../helper';
+import { getApiData } from '../../helper';
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Header from '../Header/Header';
@@ -63,9 +63,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Nav 
-          onPeopleClick={this.handlePeopleRoute}
-          onPlanetsClick={this.handlePlanetsRoute}
-          onVehiclesClick={this.handleVehiclesRoute} />
+          onClick={this.handleNavClick} />
         <Main 
           people={this.state.people}
           vehicles={this.state.vehicles}
