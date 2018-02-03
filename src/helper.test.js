@@ -1,9 +1,7 @@
-import {cleanFilmData, 
-        cleanPeopleData,
-        cleanVehiclesData,
-        cleanPlanetsData,
-        getApiData,
-        fetchAndParseApiData} from './helper.js';
+import {
+  getApiData,
+  fetchAndParseApiData
+} from './helper.js';
 
 import {
   mockFilmData,
