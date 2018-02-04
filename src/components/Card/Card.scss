@@ -2,24 +2,37 @@
 
 .card {
   text-transform: capitalize;
+  background-color: $card-bg-color;
+  box-shadow: 1px 1px 3px black;
+  width: 100%;
+  border-radius: 25px;
+  min-height: 260px;
 
   li {
     list-style: none;
+    text-align: left;
+    line-height: 150%;
+  }
+
+  ul {
+    padding: 0 15px;
   }
 
   .card-header {
     font-size: 1.1em;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 46px;
+    padding: 10px 25px;
+    border-radius: 8px 8px 0 0;
   }  
 }
 
 .star-btn {
-  height: 30px;
+  height: 27px;
   background-image: url('./star-black.svg');
-  width: 30px; 
+  width: 27px; 
 
   &:hover {
     background-image: url('./star-black-outline.svg');
@@ -27,6 +40,8 @@
 }
 
 .favorited {
+  background-color: $card-active-bg-color;
+
   .star-btn {
     background-image: url('./star-yellow.svg');
   }

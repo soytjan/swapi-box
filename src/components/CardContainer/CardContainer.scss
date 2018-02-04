@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  background-color: $box-bg-color;
+
+  h2 {
+    grid-column: 1/6;
+    text-transform: capitalize;
+  }
+}

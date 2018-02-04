@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  background-color: #434346; }
+  .card-container h2 {
+    grid-column: 1/6;
+    text-transform: capitalize; }

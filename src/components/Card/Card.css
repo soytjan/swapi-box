@@ -1,24 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
 .card {
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  background-color: #DCDCDC;
+  box-shadow: 1px 1px 3px black;
+  width: 100%;
+  border-radius: 25px;
+  min-height: 260px; }
   .card li {
-    list-style: none; }
+    list-style: none;
+    text-align: left;
+    line-height: 150%; }
+  .card ul {
+    padding: 0 15px; }
   .card .card-header {
     font-size: 1.1em;
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 46px; }
+    justify-content: space-between;
+    height: 46px;
+    padding: 10px 25px;
+    border-radius: 8px 8px 0 0; }
 
 .star-btn {
-  height: 30px;
+  height: 27px;
   background-image: url("./star-black.svg");
-  width: 30px; }
+  width: 27px; }
   .star-btn:hover {
     background-image: url("./star-black-outline.svg"); }
 
-.favorited .star-btn {
-  background-image: url("./star-yellow.svg"); }
+.favorited {
+  background-color: #787878; }
+  .favorited .star-btn {
+    background-image: url("./star-yellow.svg"); }
 
 .attr {
   font-family: "Roboto Condensed", sans-serif; }
