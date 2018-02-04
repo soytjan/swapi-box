@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScrollContainer should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ScrollContainer
+    crawl="War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor...."
+    releaseDate="2005-05-19"
+    title="Revenge of the Sith"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="fade"
+/>,
+        <div
+          className="scroll-container"
+>
+          <div
+                    className="scroll-text"
+          >
+                    <p>
+                              War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....
+                    </p>
+                    <h3>
+                              Revenge of the Sith
+                    </h3>
+                    <h4>
+                              2005-05-19
+                    </h4>
+          </div>
+</div>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "fade",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="scroll-text"
+>
+            <p>
+                        War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....
+            </p>
+            <h3>
+                        Revenge of the Sith
+            </h3>
+            <h4>
+                        2005-05-19
+            </h4>
+</div>,
+          "className": "scroll-container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....
+</p>,
+              <h3>
+                Revenge of the Sith
+</h3>,
+              <h4>
+                2005-05-19
+</h4>,
+            ],
+            "className": "scroll-text",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....",
+              },
+              "ref": null,
+              "rendered": "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Revenge of the Sith",
+              },
+              "ref": null,
+              "rendered": "Revenge of the Sith",
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2005-05-19",
+              },
+              "ref": null,
+              "rendered": "2005-05-19",
+              "type": "h4",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="fade"
+/>,
+          <div
+            className="scroll-container"
+>
+            <div
+                        className="scroll-text"
+            >
+                        <p>
+                                    War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....
+                        </p>
+                        <h3>
+                                    Revenge of the Sith
+                        </h3>
+                        <h4>
+                                    2005-05-19
+                        </h4>
+            </div>
+</div>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "fade",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="scroll-text"
+>
+              <p>
+                            War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....
+              </p>
+              <h3>
+                            Revenge of the Sith
+              </h3>
+              <h4>
+                            2005-05-19
+              </h4>
+</div>,
+            "className": "scroll-container",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p>
+                  War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....
+</p>,
+                <h3>
+                  Revenge of the Sith
+</h3>,
+                <h4>
+                  2005-05-19
+</h4>,
+              ],
+              "className": "scroll-text",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....",
+                },
+                "ref": null,
+                "rendered": "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Revenge of the Sith",
+                },
+                "ref": null,
+                "rendered": "Revenge of the Sith",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "2005-05-19",
+                },
+                "ref": null,
+                "rendered": "2005-05-19",
+                "type": "h4",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -1,0 +1,259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    favCount={1}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          SWAPI box
+</h1>,
+        <div
+          className="fav-box"
+>
+          <button
+                    className="fav-btn"
+          >
+                    <NavLink
+                              activeClassName="active"
+                              ariaCurrent="true"
+                              to="/favorites"
+                    >
+                              Favorites
+                    </NavLink>
+          </button>
+          <p>
+                    1
+          </p>
+</div>,
+      ],
+      "className": "header",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SWAPI box",
+        },
+        "ref": null,
+        "rendered": "SWAPI box",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="fav-btn"
+>
+              <NavLink
+                            activeClassName="active"
+                            ariaCurrent="true"
+                            to="/favorites"
+              >
+                            Favorites
+              </NavLink>
+</button>,
+            <p>
+              1
+</p>,
+          ],
+          "className": "fav-box",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <NavLink
+                activeClassName="active"
+                ariaCurrent="true"
+                to="/favorites"
+>
+                Favorites
+</NavLink>,
+              "className": "fav-btn",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "ariaCurrent": "true",
+                "children": "Favorites",
+                "to": "/favorites",
+              },
+              "ref": null,
+              "rendered": "Favorites",
+              "type": [Function],
+            },
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            SWAPI box
+</h1>,
+          <div
+            className="fav-box"
+>
+            <button
+                        className="fav-btn"
+            >
+                        <NavLink
+                                    activeClassName="active"
+                                    ariaCurrent="true"
+                                    to="/favorites"
+                        >
+                                    Favorites
+                        </NavLink>
+            </button>
+            <p>
+                        1
+            </p>
+</div>,
+        ],
+        "className": "header",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SWAPI box",
+          },
+          "ref": null,
+          "rendered": "SWAPI box",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="fav-btn"
+>
+                <NavLink
+                                activeClassName="active"
+                                ariaCurrent="true"
+                                to="/favorites"
+                >
+                                Favorites
+                </NavLink>
+</button>,
+              <p>
+                1
+</p>,
+            ],
+            "className": "fav-box",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <NavLink
+                  activeClassName="active"
+                  ariaCurrent="true"
+                  to="/favorites"
+>
+                  Favorites
+</NavLink>,
+                "className": "fav-btn",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "ariaCurrent": "true",
+                  "children": "Favorites",
+                  "to": "/favorites",
+                },
+                "ref": null,
+                "rendered": "Favorites",
+                "type": [Function],
+              },
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

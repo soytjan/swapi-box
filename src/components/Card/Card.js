@@ -2,15 +2,15 @@ import React from 'react';
 import './Card.css';
 
 const Card = ({info, type, onFavClick, isFavorited}) => {
-  const keys = Object.keys(info).filter((key) => key !== 'name');
+  const attributes = Object.keys(info).filter((attr) => attr !== 'name');
   const klass = `card ${type} ${isFavorited}`
-  const listItems = keys.map((key) => {
-    let value = info[key];
+  const listItems = attributes.map((attr, index) => {
+    let value = info[attr];
     if (typeof value === 'object') {
       value = value.join(', ');
     }
 
-    return <li>{key}: <span className='attr'>{value}</span></li>
+    return <li key={index}>{attr}: <span className='attr'>{value}</span></li>
   });
 
   return ( 
