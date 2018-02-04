@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Roboto|Roboto+Condensed");
 * {
   box-sizing: border-box; }
 
@@ -12,8 +12,8 @@
 
 a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4em;
+  font-family: "Bungee Hairline", cursive;
+  font-size: 1.6em;
   color: white; }
 
 button {

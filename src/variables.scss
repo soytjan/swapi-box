@@ -1,26 +1,29 @@
-
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Roboto|Roboto+Condensed');
 
 
 // Colors
 $header-color: white;
 $btn-1-color: #6A5671;
 $btn-2-color: #41769F;
-$btn-3-color: #8DC8AA;
-$btn-shadow: #2E3532;
-$fav-btn-color: #8D4858;
+$btn-3-color: #743B49;
+$btn-1-hover: #3A2F3E;
+$btn-2-hover: #2A4C66;
+$btn-3-hover: #412128;
+$btn-shadow:  #434346;
+$fav-btn-color: #5F8773;
 
 $people-color: #6A5671;
 $planets-color: #41769F;
-$vehicles-color: #8DC8AA;
+$vehicles-color: #743B49;
 
 $nav-bg-color: #787878;
-$main-bg-color: #434346;
-$box-bg-color: #434346;
-$card-bg-color: #DCDCDC;
+$main-bg-color: #2B2B2D;
+$box-bg-color: #2B2B2D;
+$card-bg-color: #B5B5B5;
 $card-active-bg-color: #787878;
 
 // Fonts
-$header-font: 'Bungee Inline', cursive;
+$header-font: 'Bungee Outline', cursive;
+$header-box-font: 'Bungee Hairline', cursive;
 $main-font: 'Roboto', sans-serif;
 $sub-font: 'Roboto Condensed', sans-serif;

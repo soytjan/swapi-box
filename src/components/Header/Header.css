@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Roboto|Roboto+Condensed");
 .header {
   height: 150px;
   background-image: url("./starrynight1.jpg");
@@ -9,20 +9,23 @@
   font-size: 1.8em; }
   .header h1 {
     color: white;
-    font-family: "Bungee Inline", cursive;
-    margin: 0; }
+    font-family: "Bungee Outline", cursive;
+    margin: 0;
+    text-shadow: 3px 3px 4px black; }
   .header p {
     font-size: 16px; }
 
 .fav-btn {
-  background-color: #8D4858; }
+  background-color: #5F8773; }
 
 .fav-box {
   display: flex;
   height: 40px;
   align-items: center;
-  width: 115px;
+  width: 170px;
   justify-content: space-between;
-  background-color: black;
+  background-color: #2B2B2D;
   color: white;
-  padding: 0 10px; }
+  padding: 0 10px;
+  position: absolute;
+  right: 50px; }

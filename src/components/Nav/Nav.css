@@ -1,27 +1,35 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Roboto|Roboto+Condensed");
 nav {
   padding: 20px 0;
   background-color: black;
   width: 50%;
   border-radius: 25px;
-  margin: 20px auto;
+  margin: 35px auto;
   border: 1.5px solid white; }
   nav button {
     padding: 5px 12px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px #2E3532; }
+    box-shadow: 0 2px 3px #434346; }
+    nav button:hover {
+      cursor: pointer; }
 
 .btn-box {
-  width: 400px;
+  width: 460px;
   margin: auto;
   display: flex;
   justify-content: space-between; }
 
 .btn-1 {
   background-color: #6A5671; }
+  .btn-1:hover {
+    background-color: #3A2F3E; }
 
 .btn-2 {
   background-color: #41769F; }
+  .btn-2:hover {
+    background-color: #2A4C66; }
 
 .btn-3 {
-  background-color: #8DC8AA; }
+  background-color: #743B49; }
+  .btn-3:hover {
+    background-color: #412128; }

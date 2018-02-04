@@ -8,10 +8,16 @@
   border-radius: 25px;
   min-height: 260px;
 
+  h4 {
+    font-weight: 400;
+  }
+
   li {
     list-style: none;
     text-align: left;
-    line-height: 150%;
+    line-height: 140%;
+    display: flex;
+    margin: 10px 0;
   }
 
   ul {
@@ -23,19 +29,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 46px;
-    padding: 10px 25px;
+    height: 50px;
+    padding: 10px 15px;
     border-radius: 8px 8px 0 0;
   }  
 }
 
 .star-btn {
-  height: 27px;
+  min-height: 27px;
   background-image: url('./star-black.svg');
-  width: 27px; 
+  min-width: 27px; 
 
   &:hover {
     background-image: url('./star-black-outline.svg');
+    cursor: pointer;
   }
 }
 
@@ -48,7 +55,14 @@
 }
 
 .attr {
+  width: 50%;
+  text-align: right;
+}
+
+.value {
   font-family: $sub-font;
+  width: 50%;
+  padding-left: 5px;
 }
 
 .people {
@@ -58,6 +72,10 @@
 
   .star-btn {
     background-color: $people-color;
+  }
+
+  .attr {
+    color: $people-color;
   }
 }
 
@@ -69,6 +87,10 @@
   .star-btn {
     background-color: $vehicles-color;
   }
+
+  .attr {
+    color: $vehicles-color;
+  }
 }
 
 .planets {
@@ -78,5 +100,9 @@
 
   .star-btn {
     background-color: $planets-color;
+  }
+
+  .attr {
+    color: $planets-color;
   }
 }
