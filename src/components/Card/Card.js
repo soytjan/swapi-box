@@ -10,7 +10,7 @@ const Card = ({info, type, onFavClick, isFavorited}) => {
       value = value.join(', ');
     }
 
-    return <li key={index}>{attr}: <span className='attr'>{value}</span></li>
+    return <li key={index}><div className='attr'>{attr}:</div> <div className='value'> {value}</div></li>
   });
 
   return ( 
