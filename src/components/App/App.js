@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-      import { getApiData } from '../../helper';
+import { getApiData } from '../../helper';
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Header from '../Header/Header';
@@ -15,14 +15,14 @@ class App extends Component {
       planets: [],
       favorites: [],
       films: [],
-      film: {},
-    }
+      film: {}
+    };
   }
 
   componentDidMount = async () => {
     const films = await getApiData('films');
 
-    this.setState({ films })
+    this.setState({ films });
     this.getRandomFilm();
   }
 
@@ -32,14 +32,13 @@ class App extends Component {
     const randNum = Math.floor(Math.random() * 7);
     const film = films[randNum];
 
-    console.log(film)
-    this.setState({ film })
+    this.setState({ film });
   }
 
   handleNavClick = async (request) => {
-    const data = await getApiData(request);
+    const swData = await getApiData(request);
 
-    this.setState({[request]: data});
+    this.setState({[request]: swData});
   }
 
   handleFavClick = (card, isFavorited) => {
@@ -57,10 +56,10 @@ class App extends Component {
   }
 
   removeFavs(card) {
-    const favorites = this.state.favorites.filter(favThing => favThing.name !== card.name);
-    console.log('remove', favorites)
+    const favorites = this.state.favorites.filter(favThing => 
+      (favThing.name !== card.name));
 
-    this.setState({ favorites })
+    this.setState({ favorites });
   }
 
   render() {
@@ -68,7 +67,7 @@ class App extends Component {
       <div className="App">
         <Header 
           favCount={this.state.favorites.length}
-           />
+        />
         <Nav 
           onClick={this.handleNavClick} />
         <Main
