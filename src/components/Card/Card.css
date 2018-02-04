@@ -17,6 +17,9 @@
   .star-btn:hover {
     background-image: url("./star-black-outline.svg"); }
 
+.favorited .star-btn {
+  background-image: url("./star-yellow.svg"); }
+
 .attr {
   font-family: "Roboto Condensed", sans-serif; }
 
