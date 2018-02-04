@@ -1,5 +1,9 @@
 @import "../../variables.scss";
 
+* {
+   box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   background-color: turquoise;
@@ -7,6 +11,7 @@
   font-family: $main-font;
   min-height: 100%;
   width: 100%;
+ 
 }
 
 a {

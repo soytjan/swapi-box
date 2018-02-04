@@ -14,60 +14,71 @@ class App extends Component {
       vehicles: [],
       planets: [],
       favorites: [],
-      films: {},
+      films: [],
+      film: {},
     }
   }
 
-  componentDidMount() {
-    // call getApiData(request);
+  componentDidMount = async () => {
+    const films = await getApiData('films');
 
-    // run a random function on it
-
-    // set state
+    this.setState({ films })
+    this.getRandomFilm();
   }
 
-  // handleFilmRoute = async () => {
-  //   const films = await getFilmData();
-  //   const randNum = Math.floor(Math.random() * 7 + 1);
+  // pass down this function so that you can click SWAPI box and go back to the home page
+  getRandomFilm = async () => {
+    const films = this.state.films;
+    const randNum = Math.floor(Math.random() * 7);
+    const film = films[randNum];
 
-  //   this.setState({films: films[randNum]});
-  // }
-
-  // handlePeopleRoute = async () => {
-  //   const people = await getPeopleData();
-
-  //   this.setState({ people });
-  // }
-
-  // handleVehiclesRoute = async () => {
-  //   const vehicles = await getVehiclesData();
-
-  //   this.setState({ vehicles });
-  // }
-
-  // handlePlanetsRoute = async () => {
-  //   const planets = await getPlanetsData();
-
-  //   this.setState({ planets });
-  // }
+    console.log(film)
+    this.setState({ film })
+  }
 
   handleNavClick = async (request) => {
-    console.log('request', request);
     const data = await getApiData(request);
 
     this.setState({[request]: data});
   }
 
+  handleFavClick = (card, isFavorited) => {
+    if (isFavorited) {
+      this.removeFavs(card);
+    } else {
+      this.addFavs(card);
+    }
+  }
+
+  addFavs(card) {
+    const favorites = [...this.state.favorites, card];
+
+    this.setState({ favorites });
+  }
+
+  removeFavs(card) {
+    const favorites = this.state.favorites.filter(favThing => favThing.name !== card.name);
+    console.log('remove', favorites)
+
+    this.setState({ favorites })
+  }
+
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header 
+          favCount={this.state.favorites.length}
+           />
         <Nav 
           onClick={this.handleNavClick} />
-        <Main 
+        <Main
+          film={this.state.film} 
           people={this.state.people}
           vehicles={this.state.vehicles}
-          planets={this.state.planets} />
+          planets={this.state.planets}
+          onFavClick={this.handleFavClick}
+          favorites={this.state.favorites}
+        />
       </div>
     );
   }
