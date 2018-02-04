@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
 nav {
-  padding: 20px 0; }
+  padding: 20px 0;
+  background-color: #787878;
+  border-bottom: 2px solid #BDC0B6; }
   nav button {
     padding: 5px 12px;
     border-radius: 10px;

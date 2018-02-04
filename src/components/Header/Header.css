@@ -6,15 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em; }
+  font-size: 1.8em; }
   .header h1 {
     color: white;
-    font-family: "Bungee Inline", cursive; }
+    font-family: "Bungee Inline", cursive;
+    margin: 0; }
   .header p {
     font-size: 16px; }
 
 .fav-btn {
-  background-color: #787878; }
+  background-color: #8D4858; }
 
 .fav-box {
   display: flex;
