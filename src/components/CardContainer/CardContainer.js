@@ -6,9 +6,9 @@ const CardContainer = ({data, type, onFavClick, favorites}) => {
   let renderedCards;
   
   if (type === 'favorites' && data.length === 0) {
-    renderedCards = (<p>You have no favorites selected!</p>)
+    renderedCards = (<p className='loading'>You have no favorites selected!</p>)
   } else if (data.length === 0) {
-    renderedCards = (<div>Loading...</div>)
+    renderedCards = (<div className='loading'>Loading...</div>)
   } else {
     renderedCards = data.map((info, index) => {
       const isFavorited = favorites.includes(info) ? 'favorited' : '';
