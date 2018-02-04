@@ -2,11 +2,11 @@ import React from 'react';
 import ScrollContainer from '../ScrollContainer/ScrollContainer';
 import './Welcome.css';
 
-const Welcome = () => {
+const Welcome = ({film}) => {
   return (
     <div className='welcome'>
       I'm Welcome
-      <ScrollContainer />
+      <ScrollContainer {...film} />
     </div>
   )
 }
