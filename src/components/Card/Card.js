@@ -33,13 +33,13 @@ const Card = ({info, type, onFavClick, isFavorited}) => {
       </ul>
     </article>
   );
-}
+};
 
 Card.propTypes = {
   info: PropTypes.object,
   type: PropTypes.string,
   onFavClick: PropTypes.func,
-  isFavorited: PropTypes.bool
+  isFavorited: PropTypes.string
 };
 
 export default Card;

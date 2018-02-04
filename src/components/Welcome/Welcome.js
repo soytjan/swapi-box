@@ -6,18 +6,13 @@ import './Welcome.css';
 const Welcome = ({film}) => {
   return (
     <div className='welcome'>
-      I'm Welcome
       <ScrollContainer {...film} />
     </div>
-  )
-}
-
-Welcome.propTypes = {
-  onClick: PropTypes.func,
+  );
 };
 
 Welcome.propTypes = {
-  film: PropTypes.object,
+  film: PropTypes.object
 };
 
 export default Welcome;

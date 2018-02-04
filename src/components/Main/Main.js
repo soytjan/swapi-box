@@ -9,17 +9,49 @@ const Main = ({film, people, vehicles, planets, onFavClick, favorites}) => {
   return (
     <main>
       <div className='card-box'>
-      <Switch>
-        <Route exact path='/' render={() => (<Welcome film={film} />)} />
-        <Route path='/people' render={() => (<CardContainer data={people} type='people' onFavClick={onFavClick} favorites={favorites} />)} />
-        <Route path='/vehicles' render={() => (<CardContainer data={vehicles} type='vehicles' onFavClick={onFavClick} favorites={favorites}/>)} />
-        <Route path='/planets' render={() => (<CardContainer data={planets} type='planets' onFavClick={onFavClick} favorites={favorites} />)} />
-        <Route path='/favorites' render={() => (<CardContainer data={favorites} type='favorites' onFavClick={onFavClick} favorites={favorites} />)} />
-      </Switch>
+        <Switch>
+          <Route exact path='/' render={() => (<Welcome film={film} />)} />
+          <Route 
+            path='/people' 
+            render={() => (<CardContainer 
+              swData={people} 
+              type='people' 
+              onFavClick={onFavClick} 
+              favorites={favorites} 
+            />)} 
+          />
+          <Route 
+            path='/vehicles' 
+            render={() => (<CardContainer 
+              swData={vehicles} 
+              type='vehicles' 
+              onFavClick={onFavClick} 
+              favorites={favorites}
+            />)} 
+          />
+          <Route 
+            path='/planets' 
+            render={() => (<CardContainer 
+              swData={planets} 
+              type='planets' 
+              onFavClick={onFavClick} 
+              favorites={favorites} 
+            />)} 
+          />
+          <Route 
+            path='/favorites' 
+            render={() => (<CardContainer 
+              swData={favorites} 
+              type='favorites' 
+              onFavClick={onFavClick} 
+              favorites={favorites} 
+            />)} 
+          />
+        </Switch>
       </div>
     </main>
-  )
-}
+  );
+};
 
 Main.propTypes = {
   film: PropTypes.object,
@@ -27,7 +59,7 @@ Main.propTypes = {
   vehicles: PropTypes.array,
   planets: PropTypes.array,
   onFavClick: PropTypes.func,
-  favorites: PropTypes.array,
+  favorites: PropTypes.array
 };
 
 export default Main;
