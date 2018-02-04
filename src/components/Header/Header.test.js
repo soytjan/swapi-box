@@ -13,4 +13,5 @@ describe('Header', () => {
 
     expect(renderedComponent).toMatchSnapshot();
   })
+
 })
