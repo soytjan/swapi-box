@@ -106,3 +106,17 @@
     color: $planets-color;
   }
 }
+
+.favorites {
+  .card-header {
+    background-color: $favorites-color;
+  }
+
+  .star-btn {
+    background-color: $favorites-color;
+  }
+
+  .attr {
+    color: $favorites-color;
+  }
+}

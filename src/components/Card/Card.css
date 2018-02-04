@@ -34,7 +34,7 @@
     cursor: pointer; }
 
 .favorited {
-  background-color: #787878; }
+  background-color: #585858; }
   .favorited .star-btn {
     background-image: url("./star-yellow.svg"); }
 
@@ -73,3 +73,12 @@
 
 .planets .attr {
   color: #41769F; }
+
+.favorites .card-header {
+  background-color: #5F8773; }
+
+.favorites .star-btn {
+  background-color: #5F8773; }
+
+.favorites .attr {
+  color: #5F8773; }
