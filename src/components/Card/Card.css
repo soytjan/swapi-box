@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
+.card {
+  text-transform: capitalize; }
+  .card li {
+    list-style: none; }
+  .card .card-header {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px; }
+
+.star-btn {
+  height: 30px;
+  background-image: url("./star-black.svg");
+  width: 30px; }
+  .star-btn:hover {
+    background-image: url("./star-black-outline.svg"); }
+
+.attr {
+  font-family: "Roboto Condensed", sans-serif; }
+
+.people .card-header {
+  background-color: #6A5671; }
+
+.people .star-btn {
+  background-color: #6A5671; }
+
+.vehicles .card-header {
+  background-color: #8DC8AA; }
+
+.vehicles .star-btn {
+  background-color: #8DC8AA; }
+
+.planets .card-header {
+  background-color: #41769F; }
+
+.planets .star-btn {
+  background-color: #41769F; }

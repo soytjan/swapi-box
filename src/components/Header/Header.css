@@ -10,6 +10,18 @@
   .header h1 {
     color: white;
     font-family: "Bungee Inline", cursive; }
+  .header p {
+    font-size: 16px; }
 
 .fav-btn {
   background-color: #787878; }
+
+.fav-box {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 115px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0 10px; }

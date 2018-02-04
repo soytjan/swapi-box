@@ -8,14 +8,28 @@
   justify-content: center;
   align-items: center;
   font-size: 2em;
-  
 
   h1 {
     color: $header-color;
     font-family: $header-font;
   }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 .fav-btn {
   background-color: $fav-btn-color;
+}
+
+.fav-box {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 115px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  padding: 0 10px;
 }

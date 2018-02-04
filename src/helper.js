@@ -15,7 +15,6 @@ export const getApiData = async (request) => {
       console.log('error!'); 
       break;     
   }
-
 } 
 
 export const fetchAndParseApiData = async (url) => {

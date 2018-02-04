@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Roboto|Roboto+Condensed");
+* {
+  box-sizing: border-box; }
+
 .App {
   text-align: center;
   background-color: turquoise;

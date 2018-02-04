@@ -1,0 +1,61 @@
+@import "../../variables.scss";
+
+.card {
+  text-transform: capitalize;
+
+  li {
+    list-style: none;
+  }
+
+  .card-header {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+  }  
+}
+
+.star-btn {
+  height: 30px;
+  background-image: url('./star-black.svg');
+  width: 30px; 
+
+  &:hover {
+    background-image: url('./star-black-outline.svg');
+  }
+}
+
+.attr {
+  font-family: $sub-font;
+}
+
+.people {
+  .card-header {
+    background-color: $people-color;
+  }
+
+  .star-btn {
+    background-color: $people-color;
+  }
+}
+
+.vehicles {
+  .card-header {
+    background-color: $vehicles-color;
+  }
+
+  .star-btn {
+    background-color: $vehicles-color;
+  }
+}
+
+.planets {
+  .card-header {
+    background-color: $planets-color;
+  }
+
+  .star-btn {
+    background-color: $planets-color;
+  }
+}
