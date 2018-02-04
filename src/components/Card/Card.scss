@@ -26,6 +26,12 @@
   }
 }
 
+.favorited {
+  .star-btn {
+    background-image: url('./star-yellow.svg');
+  }
+}
+
 .attr {
   font-family: $sub-font;
 }
