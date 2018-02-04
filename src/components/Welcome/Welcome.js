@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ScrollContainer from '../ScrollContainer/ScrollContainer';
 import './Welcome.css';
 
@@ -10,5 +11,13 @@ const Welcome = ({film}) => {
     </div>
   )
 }
+
+Welcome.propTypes = {
+  onClick: PropTypes.func,
+};
+
+Welcome.propTypes = {
+  film: PropTypes.object,
+};
 
 export default Welcome;

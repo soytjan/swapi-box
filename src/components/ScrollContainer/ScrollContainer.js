@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './ScrollContainer.css';
 
 const ScrollContainer = ({title, crawl, releaseDate }) => {
@@ -17,5 +18,11 @@ const ScrollContainer = ({title, crawl, releaseDate }) => {
     </div>
   )
 }
+
+ScrollContainer.propTypes = {
+  title: PropTypes.string,
+  crawl: PropTypes.string,
+  releaseDate: PropTypes.string,
+};
 
 export default ScrollContainer;

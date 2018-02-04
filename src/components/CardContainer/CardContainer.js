@@ -28,10 +28,10 @@ const CardContainer = ({data, type, onFavClick, favorites}) => {
 }
 
 CardContainer.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
   type: PropTypes.string,
   onFavClick: PropTypes.func,
-  favorites: PropTypes.object,
+  favorites: PropTypes.array,
 };
 
 export default CardContainer;
