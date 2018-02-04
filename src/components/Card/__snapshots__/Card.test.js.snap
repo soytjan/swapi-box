@@ -1,0 +1,626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    info={
+        Object {
+            "climate": "temperate",
+            "name": "Coruscant",
+            "population": "1000000000000",
+            "residents": Array [
+              "Finis Valorum",
+              "Adi Gallia",
+              "Jocasta Nu",
+            ],
+            "terrain": "cityscape, mountains",
+          }
+    }
+    isFavorited={false}
+    onFavClick={[Function]}
+    type="planets"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="card-header"
+>
+          <h4>
+                    Coruscant
+          </h4>
+          <button
+                    className="star-btn"
+                    onClick={[Function]}
+          />
+</div>,
+        <ul>
+          <li>
+                    terrain
+                    : 
+                    <span
+                              className="attr"
+                    >
+                              cityscape, mountains
+                    </span>
+          </li>
+          <li>
+                    population
+                    : 
+                    <span
+                              className="attr"
+                    >
+                              1000000000000
+                    </span>
+          </li>
+          <li>
+                    climate
+                    : 
+                    <span
+                              className="attr"
+                    >
+                              temperate
+                    </span>
+          </li>
+          <li>
+                    residents
+                    : 
+                    <span
+                              className="attr"
+                    >
+                              Finis Valorum, Adi Gallia, Jocasta Nu
+                    </span>
+          </li>
+</ul>,
+      ],
+      "className": "card planets false",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Coruscant
+</h4>,
+            <button
+              className="star-btn"
+              onClick={[Function]}
+/>,
+          ],
+          "className": "card-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Coruscant",
+            },
+            "ref": null,
+            "rendered": "Coruscant",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "star-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              terrain
+              : 
+              <span
+                            className="attr"
+              >
+                            cityscape, mountains
+              </span>
+</li>,
+            <li>
+              population
+              : 
+              <span
+                            className="attr"
+              >
+                            1000000000000
+              </span>
+</li>,
+            <li>
+              climate
+              : 
+              <span
+                            className="attr"
+              >
+                            temperate
+              </span>
+</li>,
+            <li>
+              residents
+              : 
+              <span
+                            className="attr"
+              >
+                            Finis Valorum, Adi Gallia, Jocasta Nu
+              </span>
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "terrain",
+                ": ",
+                <span
+                  className="attr"
+>
+                  cityscape, mountains
+</span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "terrain",
+              ": ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "cityscape, mountains",
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": "cityscape, mountains",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "population",
+                ": ",
+                <span
+                  className="attr"
+>
+                  1000000000000
+</span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "population",
+              ": ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1000000000000",
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": "1000000000000",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "climate",
+                ": ",
+                <span
+                  className="attr"
+>
+                  temperate
+</span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "climate",
+              ": ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "temperate",
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": "temperate",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "residents",
+                ": ",
+                <span
+                  className="attr"
+>
+                  Finis Valorum, Adi Gallia, Jocasta Nu
+</span>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "residents",
+              ": ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": "Finis Valorum, Adi Gallia, Jocasta Nu",
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card-header"
+>
+            <h4>
+                        Coruscant
+            </h4>
+            <button
+                        className="star-btn"
+                        onClick={[Function]}
+            />
+</div>,
+          <ul>
+            <li>
+                        terrain
+                        : 
+                        <span
+                                    className="attr"
+                        >
+                                    cityscape, mountains
+                        </span>
+            </li>
+            <li>
+                        population
+                        : 
+                        <span
+                                    className="attr"
+                        >
+                                    1000000000000
+                        </span>
+            </li>
+            <li>
+                        climate
+                        : 
+                        <span
+                                    className="attr"
+                        >
+                                    temperate
+                        </span>
+            </li>
+            <li>
+                        residents
+                        : 
+                        <span
+                                    className="attr"
+                        >
+                                    Finis Valorum, Adi Gallia, Jocasta Nu
+                        </span>
+            </li>
+</ul>,
+        ],
+        "className": "card planets false",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Coruscant
+</h4>,
+              <button
+                className="star-btn"
+                onClick={[Function]}
+/>,
+            ],
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Coruscant",
+              },
+              "ref": null,
+              "rendered": "Coruscant",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "star-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                terrain
+                : 
+                <span
+                                className="attr"
+                >
+                                cityscape, mountains
+                </span>
+</li>,
+              <li>
+                population
+                : 
+                <span
+                                className="attr"
+                >
+                                1000000000000
+                </span>
+</li>,
+              <li>
+                climate
+                : 
+                <span
+                                className="attr"
+                >
+                                temperate
+                </span>
+</li>,
+              <li>
+                residents
+                : 
+                <span
+                                className="attr"
+                >
+                                Finis Valorum, Adi Gallia, Jocasta Nu
+                </span>
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "terrain",
+                  ": ",
+                  <span
+                    className="attr"
+>
+                    cityscape, mountains
+</span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "terrain",
+                ": ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "cityscape, mountains",
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": "cityscape, mountains",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "population",
+                  ": ",
+                  <span
+                    className="attr"
+>
+                    1000000000000
+</span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "population",
+                ": ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1000000000000",
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": "1000000000000",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "climate",
+                  ": ",
+                  <span
+                    className="attr"
+>
+                    temperate
+</span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "climate",
+                ": ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "temperate",
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": "temperate",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "residents",
+                  ": ",
+                  <span
+                    className="attr"
+>
+                    Finis Valorum, Adi Gallia, Jocasta Nu
+</span>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "residents",
+                ": ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Finis Valorum, Adi Gallia, Jocasta Nu",
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
