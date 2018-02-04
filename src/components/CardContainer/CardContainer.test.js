@@ -13,5 +13,13 @@ describe('CardContainer', () => {
     const renderedComponent = shallow(<CardContainer data={mockData} type='planets' onFavClick={mockFavClick} favorites={[]} />)
 
     expect(renderedComponent).toMatchSnapshot();
-  })
+  });
+
+  it('should have Loading page if no data is passed in', () => {
+
+  });
+
+  it('when there are no favorites, should have a message indicating there are no favorites', () => {
+
+  });
 })

@@ -13,4 +13,7 @@ describe('Nav', () => {
 
     expect(renderedComponent).toMatchSnapshot();
   })
+  
+
+  // need to check that all the buttons go to the proper routes 
 })

@@ -16,4 +16,6 @@ describe('Main', () => {
 
     expect(renderedComponent).toMatchSnapshot();
   })
+
+  // do i need to check for all the routes? 
 })
