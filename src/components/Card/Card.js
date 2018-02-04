@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 const Card = ({info, type, onFavClick, isFavorited}) => {
@@ -25,5 +26,12 @@ const Card = ({info, type, onFavClick, isFavorited}) => {
     </article>
   )
 }
+
+Card.propTypes = {
+  info: PropTypes.object,
+  type: PropTypes.string,
+  onFavClick: PropTypes.func,
+  isFavorites: PropTypes.bool
+};
 
 export default Card;
