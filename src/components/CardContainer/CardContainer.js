@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 import './CardContainer.css'
 
@@ -25,5 +26,12 @@ const CardContainer = ({data, type, onFavClick, favorites}) => {
     </section>
   )
 }
+
+CardContainer.propTypes = {
+  data: PropTypes.object,
+  type: PropTypes.string,
+  onFavClick: PropTypes.func,
+  favorites: PropTypes.object,
+};
 
 export default CardContainer;

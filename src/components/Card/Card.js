@@ -31,7 +31,7 @@ Card.propTypes = {
   info: PropTypes.object,
   type: PropTypes.string,
   onFavClick: PropTypes.func,
-  isFavorites: PropTypes.bool
+  isFavorited: PropTypes.bool
 };
 
 export default Card;
