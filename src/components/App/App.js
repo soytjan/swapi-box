@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { getApiData } from '../../helper';
+      import { getApiData } from '../../helper';
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Header from '../Header/Header';

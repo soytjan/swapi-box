@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import {
   getApiData,
   fetchAndParseApiData
@@ -14,7 +16,7 @@ import {
   mockCleanVehicleData
 } from './mockData';
 
- // test makes calls with expected params
+// test makes calls with expected params
   // don't test that fetch works -- only need to test what I have written
   // check that data that you're getting back
   // mock out full response from the API to check that cleaner is working
