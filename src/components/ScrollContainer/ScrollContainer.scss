@@ -1,21 +1,31 @@
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 30vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
 .scroll-container {
-  background-color: #000;
   display: flex;
   justify-content: center;
   /* This is a magic number based on the context in which this snippet is used and effects the perspective */
-  height: 400px;
+  height: 500px;
   /* This sets allows us to transform the text on a 3D plane, and is somewhat a magic number */
-  perspective: 250px;
+  perspective: 300px;
+  color: #feda4a;
+  font-size: 2em;
+  letter-spacing: 6px;
+  line-height: 150%;
+  text-align: justify;
 }
 
 .scroll-text {
-  color: yellow;
   position: relative;
-  /* Making sure the text is fully off the screen at the start and end of the animation */
-  top: -100px;
+  top: -50px;
   /* Defines the skew origin at the very center when we apply transforms on the animation */
   transform-origin: 50% 100%;
-  /* Position the element so we can adjust the top property in the animation */
   position: relative;
   /* Defines the skew origin at the very center when we apply transforms on the animation */
   transform-origin: 50% 100%;
@@ -37,12 +47,3 @@
     transform: rotateX(25deg) translateZ(-2500px);
   }
 }
-
-// .fade {
-//   position: relative;
-//   width: 100%;
-//   min-height: 300px;
-//   top: -25px;
-//   background-image: linear-gradient(0deg, transparent, black 75%);
-//   z-index: 1;
-// }

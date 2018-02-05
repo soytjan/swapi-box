@@ -2,11 +2,12 @@
 
 main {
   background-color: $main-bg-color;
-  padding: 10px 20px;
-  margin: 0 30px;
+  padding: 10px 20px 30px;
+  margin: 0 auto;
+  max-width: 1231px;
 }
 
 .card-box {
-  min-height: 700px;
+  min-height: 660px;
   background-color: $box-bg-color;
 }

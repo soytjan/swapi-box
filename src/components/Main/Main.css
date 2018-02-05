@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Roboto|Roboto+Condensed");
 main {
   background-color: #2B2B2D;
-  padding: 10px 20px;
-  margin: 0 30px; }
+  padding: 10px 20px 30px;
+  margin: 0 auto;
+  max-width: 1231px; }
 
 .card-box {
-  min-height: 700px;
+  min-height: 660px;
   background-color: #2B2B2D; }
