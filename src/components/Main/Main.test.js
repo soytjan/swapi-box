@@ -1,11 +1,11 @@
 import React from 'react';
+import { shallow, mount } from 'enzyme';
+import { MemoryRouter } from 'react-router';
+import Welcome from '../Welcome/Welcome';
+import CardContainer from '../CardContainer/CardContainer';
 import Main from './Main';
 
 describe('Main', () => {
-  it('expect to exist', () => {
-    expect(Main).toBeDefined();
-  })
-
   it.skip('should match snapshot', () => {
     const mockFilm = {title: "Revenge of the Sith", crawl: "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....", releaseDate: "2005-05-19"};
     const mockPeople = [{ name: "Luke Skywalker",homeworld: "Tatooine", population: 200000,species: "Human" }];
@@ -15,5 +15,16 @@ describe('Main', () => {
     const renderedComponent = shallow(<Main film={mockFilm} people={mockPeople} vehicles={mockVehicle} planets={mockPlanet} onFavClick={mockFavClick} favorites={[]} />)
 
     expect(renderedComponent).toMatchSnapshot();
-  })
+  });
+
+  it('should load Welcome page by default', () => {
+    const renderedComponent = mount(
+      <MemoryRouter intialEntries={[ '/' ]}>
+        <Main />
+      </MemoryRouter>
+    );
+
+    expect(renderedComponent.find(Welcome)).toHaveLength(1);
+    expect(renderedComponent.find(CardContainer)).toHaveLength(0);
+  });
 })

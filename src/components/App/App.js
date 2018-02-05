@@ -36,9 +36,11 @@ class App extends Component {
   }
 
   handleNavClick = async (request) => {
-    const swData = await getApiData(request);
+    if(this.state[request].length === 0) {
+      const swData = await getApiData(request);
 
-    this.setState({[request]: swData});
+      this.setState({[request]: swData});
+    }
   }
 
   handleFavClick = (card, isFavorited) => {

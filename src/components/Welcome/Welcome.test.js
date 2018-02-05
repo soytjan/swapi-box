@@ -3,10 +3,6 @@ import { shallow } from 'enzyme';
 import Welcome from './Welcome';
 
 describe('Welcome', () => {
-  it('expect to exist', () => {
-    expect(Welcome).toBeDefined();
-  })
-
   it.skip('should match snapshot', () => {
     const mockFilm = {title: "Revenge of the Sith", crawl: "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....", releaseDate: "2005-05-19"};
     const renderedComponent = shallow(<Welcome film={mockFilm} />);
