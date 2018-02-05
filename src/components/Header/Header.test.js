@@ -13,8 +13,4 @@ describe('Header', () => {
 
     expect(renderedComponent).toMatchSnapshot();
   })
-  
-  it('should route to /favorites when button is clicked', () => {
-    
-  })
 })
