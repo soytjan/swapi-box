@@ -2,11 +2,30 @@
 
 main {
   background-color: $main-bg-color;
-  padding: 10px 20px;
-  margin: 0 30px;
+  padding: 10px 20px 30px;
+  margin: 0 auto;
+  max-width: 1560px;
 }
 
 .card-box {
-  min-height: 700px;
+  min-height: 660px;
   background-color: $box-bg-color;
+}
+
+@media screen and (max-width: 1630px) {
+  main {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  main {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  main {
+    margin: 0 20px;
+  }
 }

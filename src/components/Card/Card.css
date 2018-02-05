@@ -33,11 +33,6 @@
     background-image: url("./star-black-outline.svg");
     cursor: pointer; }
 
-.favorited {
-  background-color: #585858; }
-  .favorited .star-btn {
-    background-image: url("./star-yellow.svg"); }
-
 .attr {
   width: 50%;
   text-align: right; }
@@ -82,3 +77,10 @@
 
 .favorites .attr {
   color: #5F8773; }
+
+.favorited {
+  background-color: #585858; }
+  .favorited .attr {
+    color: white; }
+  .favorited .star-btn {
+    background-image: url("./star-yellow.svg"); }

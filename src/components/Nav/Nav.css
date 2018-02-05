@@ -33,3 +33,23 @@ nav {
   background-color: #743B49; }
   .btn-3:hover {
     background-color: #412128; }
+
+@media screen and (max-width: 1020px) {
+  nav {
+    width: 65%; } }
+
+@media screen and (max-width: 780px) {
+  nav {
+    width: 75%; } }
+
+@media screen and (max-width: 680px) {
+  nav {
+    width: 200px;
+    height: 170px; }
+    nav button {
+      width: 150px; }
+  .btn-box {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%; } }
