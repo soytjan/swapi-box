@@ -2,7 +2,6 @@
 .header {
   height: 150px;
   background-image: url("./starrynight1.jpg");
-  background-color: turquoise;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,3 +28,18 @@
   padding: 0 10px;
   position: absolute;
   right: 50px; }
+
+@media screen and (max-width: 850px) {
+  .header {
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px; }
+  .fav-box {
+    position: relative;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 392px) {
+  .header {
+    height: 300px; } }

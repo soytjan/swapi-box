@@ -46,14 +46,6 @@
   }
 }
 
-.favorited {
-  background-color: $card-active-bg-color;
-
-  .star-btn {
-    background-image: url('./star-yellow.svg');
-  }
-}
-
 .attr {
   width: 50%;
   text-align: right;
@@ -118,5 +110,17 @@
 
   .attr {
     color: $favorites-color;
+  }
+}
+
+.favorited {
+  background-color: $card-active-bg-color;
+
+  .attr {
+    color: white;
+  }
+
+  .star-btn {
+    background-image: url('./star-yellow.svg');
   }
 }

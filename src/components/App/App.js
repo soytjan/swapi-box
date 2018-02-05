@@ -4,6 +4,7 @@ import { getApiData } from '../../helper';
 import Nav from '../Nav/Nav';
 import Main from '../Main/Main';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 class App extends Component {
   constructor() {
@@ -80,6 +81,7 @@ class App extends Component {
           onFavClick={this.handleFavClick}
           favorites={this.state.favorites}
         />
+        <Footer />
       </div>
     );
   }
