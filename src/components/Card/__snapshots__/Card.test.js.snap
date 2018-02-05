@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should match snapshot 1`] = `
+exports[`Card should have a class of favorites when it is in the favorites section 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -18,7 +18,7 @@ ShallowWrapper {
             "terrain": "cityscape, mountains",
           }
     }
-    isFavorited={false}
+    isFavorited="favorited"
     onFavClick={[Function]}
     type="planets"
 />,
@@ -48,44 +48,64 @@ ShallowWrapper {
 </div>,
         <ul>
           <li>
-                    terrain
-                    : 
-                    <span
+                    <div
                               className="attr"
                     >
+                              terrain
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
                               cityscape, mountains
-                    </span>
+                    </div>
           </li>
           <li>
-                    population
-                    : 
-                    <span
+                    <div
                               className="attr"
                     >
+                              population
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
                               1000000000000
-                    </span>
+                    </div>
           </li>
           <li>
-                    climate
-                    : 
-                    <span
+                    <div
                               className="attr"
                     >
+                              climate
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
                               temperate
-                    </span>
+                    </div>
           </li>
           <li>
-                    residents
-                    : 
-                    <span
+                    <div
                               className="attr"
                     >
+                              residents
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
                               Finis Valorum, Adi Gallia, Jocasta Nu
-                    </span>
+                    </div>
           </li>
 </ul>,
       ],
-      "className": "card planets false",
+      "className": "card planets favorited",
     },
     "ref": null,
     "rendered": Array [
@@ -140,40 +160,60 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li>
-              terrain
-              : 
-              <span
+              <div
                             className="attr"
               >
+                            terrain
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
                             cityscape, mountains
-              </span>
+              </div>
 </li>,
             <li>
-              population
-              : 
-              <span
+              <div
                             className="attr"
               >
+                            population
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
                             1000000000000
-              </span>
+              </div>
 </li>,
             <li>
-              climate
-              : 
-              <span
+              <div
                             className="attr"
               >
+                            climate
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
                             temperate
-              </span>
+              </div>
 </li>,
             <li>
-              residents
-              : 
-              <span
+              <div
                             className="attr"
               >
+                            residents
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
                             Finis Valorum, Adi Gallia, Jocasta Nu
-              </span>
+              </div>
 </li>,
           ],
         },
@@ -185,30 +225,57 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "terrain",
-                ": ",
-                <span
+                <div
                   className="attr"
 >
+                  terrain
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
                   cityscape, mountains
-</span>,
+</div>,
               ],
             },
             "ref": null,
             "rendered": Array [
-              "terrain",
-              ": ",
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "cityscape, mountains",
+                  "children": Array [
+                    "terrain",
+                    ":",
+                  ],
                   "className": "attr",
                 },
                 "ref": null,
-                "rendered": "cityscape, mountains",
-                "type": "span",
+                "rendered": Array [
+                  "terrain",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "cityscape, mountains",
+                ],
+                "type": "div",
               },
             ],
             "type": "li",
@@ -219,30 +286,57 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "population",
-                ": ",
-                <span
+                <div
                   className="attr"
 >
+                  population
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
                   1000000000000
-</span>,
+</div>,
               ],
             },
             "ref": null,
             "rendered": Array [
-              "population",
-              ": ",
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "1000000000000",
+                  "children": Array [
+                    "population",
+                    ":",
+                  ],
                   "className": "attr",
                 },
                 "ref": null,
-                "rendered": "1000000000000",
-                "type": "span",
+                "rendered": Array [
+                  "population",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "1000000000000",
+                ],
+                "type": "div",
               },
             ],
             "type": "li",
@@ -253,30 +347,57 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "climate",
-                ": ",
-                <span
+                <div
                   className="attr"
 >
+                  climate
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
                   temperate
-</span>,
+</div>,
               ],
             },
             "ref": null,
             "rendered": Array [
-              "climate",
-              ": ",
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "temperate",
+                  "children": Array [
+                    "climate",
+                    ":",
+                  ],
                   "className": "attr",
                 },
                 "ref": null,
-                "rendered": "temperate",
-                "type": "span",
+                "rendered": Array [
+                  "climate",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "temperate",
+                ],
+                "type": "div",
               },
             ],
             "type": "li",
@@ -287,30 +408,57 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "residents",
-                ": ",
-                <span
+                <div
                   className="attr"
 >
+                  residents
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
                   Finis Valorum, Adi Gallia, Jocasta Nu
-</span>,
+</div>,
               ],
             },
             "ref": null,
             "rendered": Array [
-              "residents",
-              ": ",
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  "children": Array [
+                    "residents",
+                    ":",
+                  ],
                   "className": "attr",
                 },
                 "ref": null,
-                "rendered": "Finis Valorum, Adi Gallia, Jocasta Nu",
-                "type": "span",
+                "rendered": Array [
+                  "residents",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Finis Valorum, Adi Gallia, Jocasta Nu",
+                ],
+                "type": "div",
               },
             ],
             "type": "li",
@@ -341,44 +489,64 @@ ShallowWrapper {
 </div>,
           <ul>
             <li>
-                        terrain
-                        : 
-                        <span
+                        <div
                                     className="attr"
                         >
+                                    terrain
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
                                     cityscape, mountains
-                        </span>
+                        </div>
             </li>
             <li>
-                        population
-                        : 
-                        <span
+                        <div
                                     className="attr"
                         >
+                                    population
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
                                     1000000000000
-                        </span>
+                        </div>
             </li>
             <li>
-                        climate
-                        : 
-                        <span
+                        <div
                                     className="attr"
                         >
+                                    climate
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
                                     temperate
-                        </span>
+                        </div>
             </li>
             <li>
-                        residents
-                        : 
-                        <span
+                        <div
                                     className="attr"
                         >
+                                    residents
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
                                     Finis Valorum, Adi Gallia, Jocasta Nu
-                        </span>
+                        </div>
             </li>
 </ul>,
         ],
-        "className": "card planets false",
+        "className": "card planets favorited",
       },
       "ref": null,
       "rendered": Array [
@@ -433,40 +601,60 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
-                terrain
-                : 
-                <span
+                <div
                                 className="attr"
                 >
+                                terrain
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
                                 cityscape, mountains
-                </span>
+                </div>
 </li>,
               <li>
-                population
-                : 
-                <span
+                <div
                                 className="attr"
                 >
+                                population
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
                                 1000000000000
-                </span>
+                </div>
 </li>,
               <li>
-                climate
-                : 
-                <span
+                <div
                                 className="attr"
                 >
+                                climate
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
                                 temperate
-                </span>
+                </div>
 </li>,
               <li>
-                residents
-                : 
-                <span
+                <div
                                 className="attr"
                 >
+                                residents
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
                                 Finis Valorum, Adi Gallia, Jocasta Nu
-                </span>
+                </div>
 </li>,
             ],
           },
@@ -478,30 +666,57 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "terrain",
-                  ": ",
-                  <span
+                  <div
                     className="attr"
 >
+                    terrain
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
                     cityscape, mountains
-</span>,
+</div>,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "terrain",
-                ": ",
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "cityscape, mountains",
+                    "children": Array [
+                      "terrain",
+                      ":",
+                    ],
                     "className": "attr",
                   },
                   "ref": null,
-                  "rendered": "cityscape, mountains",
-                  "type": "span",
+                  "rendered": Array [
+                    "terrain",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "cityscape, mountains",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "type": "div",
                 },
               ],
               "type": "li",
@@ -512,30 +727,57 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "population",
-                  ": ",
-                  <span
+                  <div
                     className="attr"
 >
+                    population
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
                     1000000000000
-</span>,
+</div>,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "population",
-                ": ",
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "1000000000000",
+                    "children": Array [
+                      "population",
+                      ":",
+                    ],
                     "className": "attr",
                   },
                   "ref": null,
-                  "rendered": "1000000000000",
-                  "type": "span",
+                  "rendered": Array [
+                    "population",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "1000000000000",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "type": "div",
                 },
               ],
               "type": "li",
@@ -546,30 +788,57 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "climate",
-                  ": ",
-                  <span
+                  <div
                     className="attr"
 >
+                    climate
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
                     temperate
-</span>,
+</div>,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "climate",
-                ": ",
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "temperate",
+                    "children": Array [
+                      "climate",
+                      ":",
+                    ],
                     "className": "attr",
                   },
                   "ref": null,
-                  "rendered": "temperate",
-                  "type": "span",
+                  "rendered": Array [
+                    "climate",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "temperate",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "type": "div",
                 },
               ],
               "type": "li",
@@ -580,30 +849,2820 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  "residents",
-                  ": ",
-                  <span
+                  <div
                     className="attr"
 >
+                    residents
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
                     Finis Valorum, Adi Gallia, Jocasta Nu
-</span>,
+</div>,
                 ],
               },
               "ref": null,
               "rendered": Array [
-                "residents",
-                ": ",
                 Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Finis Valorum, Adi Gallia, Jocasta Nu",
+                    "children": Array [
+                      "residents",
+                      ":",
+                    ],
                     "className": "attr",
                   },
                   "ref": null,
-                  "rendered": "Finis Valorum, Adi Gallia, Jocasta Nu",
-                  "type": "span",
+                  "rendered": Array [
+                    "residents",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Finis Valorum, Adi Gallia, Jocasta Nu",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card should have a class of people when it has people data 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    info={
+        Object {
+            "climate": "temperate",
+            "name": "Coruscant",
+            "population": "1000000000000",
+            "residents": Array [
+              "Finis Valorum",
+              "Adi Gallia",
+              "Jocasta Nu",
+            ],
+            "terrain": "cityscape, mountains",
+          }
+    }
+    isFavorited=""
+    onFavClick={[Function]}
+    type="people"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="card-header"
+>
+          <h4>
+                    Coruscant
+          </h4>
+          <button
+                    className="star-btn"
+                    onClick={[Function]}
+          />
+</div>,
+        <ul>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              terrain
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              cityscape, mountains
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              population
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              1000000000000
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              climate
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              temperate
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              residents
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              Finis Valorum, Adi Gallia, Jocasta Nu
+                    </div>
+          </li>
+</ul>,
+      ],
+      "className": "card people ",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Coruscant
+</h4>,
+            <button
+              className="star-btn"
+              onClick={[Function]}
+/>,
+          ],
+          "className": "card-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Coruscant",
+            },
+            "ref": null,
+            "rendered": "Coruscant",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "star-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <div
+                            className="attr"
+              >
+                            terrain
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            cityscape, mountains
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            population
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            1000000000000
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            climate
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            temperate
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            residents
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            Finis Valorum, Adi Gallia, Jocasta Nu
+              </div>
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  terrain
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  cityscape, mountains
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "terrain",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "terrain",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "cityscape, mountains",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  population
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  1000000000000
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "population",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "population",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "1000000000000",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  climate
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  temperate
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "climate",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "climate",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "temperate",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  residents
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  Finis Valorum, Adi Gallia, Jocasta Nu
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "residents",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "residents",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Finis Valorum, Adi Gallia, Jocasta Nu",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card-header"
+>
+            <h4>
+                        Coruscant
+            </h4>
+            <button
+                        className="star-btn"
+                        onClick={[Function]}
+            />
+</div>,
+          <ul>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    terrain
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    cityscape, mountains
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    population
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    1000000000000
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    climate
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    temperate
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    residents
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    Finis Valorum, Adi Gallia, Jocasta Nu
+                        </div>
+            </li>
+</ul>,
+        ],
+        "className": "card people ",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Coruscant
+</h4>,
+              <button
+                className="star-btn"
+                onClick={[Function]}
+/>,
+            ],
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Coruscant",
+              },
+              "ref": null,
+              "rendered": "Coruscant",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "star-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <div
+                                className="attr"
+                >
+                                terrain
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                cityscape, mountains
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                population
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                1000000000000
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                climate
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                temperate
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                residents
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                Finis Valorum, Adi Gallia, Jocasta Nu
+                </div>
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    terrain
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    cityscape, mountains
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "terrain",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "terrain",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "cityscape, mountains",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    population
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    1000000000000
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "population",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "population",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "1000000000000",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    climate
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    temperate
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "climate",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "climate",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "temperate",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    residents
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    Finis Valorum, Adi Gallia, Jocasta Nu
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "residents",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "residents",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Finis Valorum, Adi Gallia, Jocasta Nu",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card should have a class of planets when it has planets data 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    info={
+        Object {
+            "climate": "temperate",
+            "name": "Coruscant",
+            "population": "1000000000000",
+            "residents": Array [
+              "Finis Valorum",
+              "Adi Gallia",
+              "Jocasta Nu",
+            ],
+            "terrain": "cityscape, mountains",
+          }
+    }
+    isFavorited=""
+    onFavClick={[Function]}
+    type="planets"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="card-header"
+>
+          <h4>
+                    Coruscant
+          </h4>
+          <button
+                    className="star-btn"
+                    onClick={[Function]}
+          />
+</div>,
+        <ul>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              terrain
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              cityscape, mountains
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              population
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              1000000000000
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              climate
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              temperate
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              residents
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              Finis Valorum, Adi Gallia, Jocasta Nu
+                    </div>
+          </li>
+</ul>,
+      ],
+      "className": "card planets ",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Coruscant
+</h4>,
+            <button
+              className="star-btn"
+              onClick={[Function]}
+/>,
+          ],
+          "className": "card-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Coruscant",
+            },
+            "ref": null,
+            "rendered": "Coruscant",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "star-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <div
+                            className="attr"
+              >
+                            terrain
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            cityscape, mountains
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            population
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            1000000000000
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            climate
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            temperate
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            residents
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            Finis Valorum, Adi Gallia, Jocasta Nu
+              </div>
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  terrain
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  cityscape, mountains
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "terrain",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "terrain",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "cityscape, mountains",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  population
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  1000000000000
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "population",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "population",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "1000000000000",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  climate
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  temperate
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "climate",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "climate",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "temperate",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  residents
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  Finis Valorum, Adi Gallia, Jocasta Nu
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "residents",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "residents",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Finis Valorum, Adi Gallia, Jocasta Nu",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card-header"
+>
+            <h4>
+                        Coruscant
+            </h4>
+            <button
+                        className="star-btn"
+                        onClick={[Function]}
+            />
+</div>,
+          <ul>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    terrain
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    cityscape, mountains
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    population
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    1000000000000
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    climate
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    temperate
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    residents
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    Finis Valorum, Adi Gallia, Jocasta Nu
+                        </div>
+            </li>
+</ul>,
+        ],
+        "className": "card planets ",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Coruscant
+</h4>,
+              <button
+                className="star-btn"
+                onClick={[Function]}
+/>,
+            ],
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Coruscant",
+              },
+              "ref": null,
+              "rendered": "Coruscant",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "star-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <div
+                                className="attr"
+                >
+                                terrain
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                cityscape, mountains
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                population
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                1000000000000
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                climate
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                temperate
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                residents
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                Finis Valorum, Adi Gallia, Jocasta Nu
+                </div>
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    terrain
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    cityscape, mountains
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "terrain",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "terrain",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "cityscape, mountains",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    population
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    1000000000000
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "population",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "population",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "1000000000000",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    climate
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    temperate
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "climate",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "climate",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "temperate",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    residents
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    Finis Valorum, Adi Gallia, Jocasta Nu
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "residents",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "residents",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Finis Valorum, Adi Gallia, Jocasta Nu",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "article",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card should have a class of vehicles when it has vehicles data 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    info={
+        Object {
+            "climate": "temperate",
+            "name": "Coruscant",
+            "population": "1000000000000",
+            "residents": Array [
+              "Finis Valorum",
+              "Adi Gallia",
+              "Jocasta Nu",
+            ],
+            "terrain": "cityscape, mountains",
+          }
+    }
+    isFavorited=""
+    onFavClick={[Function]}
+    type="vehicles"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="card-header"
+>
+          <h4>
+                    Coruscant
+          </h4>
+          <button
+                    className="star-btn"
+                    onClick={[Function]}
+          />
+</div>,
+        <ul>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              terrain
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              cityscape, mountains
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              population
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              1000000000000
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              climate
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              temperate
+                    </div>
+          </li>
+          <li>
+                    <div
+                              className="attr"
+                    >
+                              residents
+                              :
+                    </div>
+                    <div
+                              className="value"
+                    >
+                               
+                              Finis Valorum, Adi Gallia, Jocasta Nu
+                    </div>
+          </li>
+</ul>,
+      ],
+      "className": "card vehicles ",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Coruscant
+</h4>,
+            <button
+              className="star-btn"
+              onClick={[Function]}
+/>,
+          ],
+          "className": "card-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Coruscant",
+            },
+            "ref": null,
+            "rendered": "Coruscant",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "star-btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              <div
+                            className="attr"
+              >
+                            terrain
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            cityscape, mountains
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            population
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            1000000000000
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            climate
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            temperate
+              </div>
+</li>,
+            <li>
+              <div
+                            className="attr"
+              >
+                            residents
+                            :
+              </div>
+              <div
+                            className="value"
+              >
+                             
+                            Finis Valorum, Adi Gallia, Jocasta Nu
+              </div>
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  terrain
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  cityscape, mountains
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "terrain",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "terrain",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "cityscape, mountains",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  population
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  1000000000000
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "population",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "population",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "1000000000000",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  climate
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  temperate
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "climate",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "climate",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "temperate",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="attr"
+>
+                  residents
+                  :
+</div>,
+                <div
+                  className="value"
+>
+                   
+                  Finis Valorum, Adi Gallia, Jocasta Nu
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "residents",
+                    ":",
+                  ],
+                  "className": "attr",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "residents",
+                  ":",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "className": "value",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Finis Valorum, Adi Gallia, Jocasta Nu",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "article",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="card-header"
+>
+            <h4>
+                        Coruscant
+            </h4>
+            <button
+                        className="star-btn"
+                        onClick={[Function]}
+            />
+</div>,
+          <ul>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    terrain
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    cityscape, mountains
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    population
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    1000000000000
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    climate
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    temperate
+                        </div>
+            </li>
+            <li>
+                        <div
+                                    className="attr"
+                        >
+                                    residents
+                                    :
+                        </div>
+                        <div
+                                    className="value"
+                        >
+                                     
+                                    Finis Valorum, Adi Gallia, Jocasta Nu
+                        </div>
+            </li>
+</ul>,
+        ],
+        "className": "card vehicles ",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Coruscant
+</h4>,
+              <button
+                className="star-btn"
+                onClick={[Function]}
+/>,
+            ],
+            "className": "card-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Coruscant",
+              },
+              "ref": null,
+              "rendered": "Coruscant",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "star-btn",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                <div
+                                className="attr"
+                >
+                                terrain
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                cityscape, mountains
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                population
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                1000000000000
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                climate
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                temperate
+                </div>
+</li>,
+              <li>
+                <div
+                                className="attr"
+                >
+                                residents
+                                :
+                </div>
+                <div
+                                className="value"
+                >
+                                 
+                                Finis Valorum, Adi Gallia, Jocasta Nu
+                </div>
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    terrain
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    cityscape, mountains
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "terrain",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "terrain",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "cityscape, mountains",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "cityscape, mountains",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    population
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    1000000000000
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "population",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "population",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "1000000000000",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "1000000000000",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    climate
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    temperate
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "climate",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "climate",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "temperate",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "temperate",
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="attr"
+>
+                    residents
+                    :
+</div>,
+                  <div
+                    className="value"
+>
+                     
+                    Finis Valorum, Adi Gallia, Jocasta Nu
+</div>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "residents",
+                      ":",
+                    ],
+                    "className": "attr",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "residents",
+                    ":",
+                  ],
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      " ",
+                      "Finis Valorum, Adi Gallia, Jocasta Nu",
+                    ],
+                    "className": "value",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    " ",
+                    "Finis Valorum, Adi Gallia, Jocasta Nu",
+                  ],
+                  "type": "div",
                 },
               ],
               "type": "li",
