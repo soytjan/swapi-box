@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import { shallow } from 'enzyme'; 
 import Nav from './Nav';
@@ -11,7 +13,7 @@ describe('Nav', () => {
     renderedComponent = shallow(<Nav onClick={mockOnClick} />);
   });
 
-  it.skip('should match snapshot', () => {
+  it('should match snapshot', () => {
     expect(renderedComponent).toMatchSnapshot();
   });
   

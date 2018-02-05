@@ -16,13 +16,6 @@ import {
   mockCleanVehicleData
 } from './mockData';
 
-// test makes calls with expected params
-  // don't test that fetch works -- only need to test what I have written
-  // check that data that you're getting back
-  // mock out full response from the API to check that cleaner is working
-  // test that fetch works once => expect that it's going to return 
-  // each helper function needs to have it's own 
-
 describe('helper', () => {
 
   describe('fetchAndParseApiData', () => {

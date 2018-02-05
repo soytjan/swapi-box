@@ -32,6 +32,7 @@ ShallowWrapper {
           planets={Array []}
           vehicles={Array []}
 />,
+        <Footer />,
       ],
       "className": "App",
     },
@@ -75,6 +76,15 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
     ],
     "type": "div",
   },
@@ -99,6 +109,7 @@ ShallowWrapper {
             planets={Array []}
             vehicles={Array []}
 />,
+          <Footer />,
         ],
         "className": "App",
       },
@@ -138,6 +149,15 @@ ShallowWrapper {
             "planets": Array [],
             "vehicles": Array [],
           },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

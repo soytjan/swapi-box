@@ -1,29 +1,31 @@
+/* eslint-disable */
+
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import App from './App';
 import { getApiData } from '../../helper';
 import { mockFilmData,
-    mockCleanFilmData,
-    mockPeopleData,
-    mockCleanPeopleData,
-    mockPlanetData,
-    mockCleanPlanetData,
-    mockVehicleData,
-    mockCleanVehicleData
- } from '../../mockData';
+  mockCleanFilmData,
+  mockPeopleData,
+  mockCleanPeopleData,
+  mockPlanetData,
+  mockCleanPlanetData,
+  mockVehicleData,
+  mockCleanVehicleData
+} from '../../mockData';
 
 describe('App', () => {
   it('expect to exist', () => {
     expect(App).toBeDefined();
-  })
+  });
 
-  it.skip('should match the snapshot', async () => {
+  it('should match the snapshot', async () => {
     window.fetch = jest.fn().mockImplementation(() => ({
-        status: 200,
-        json: () => new Promise((resolve, reject) => {
-          resolve(mockFilmData) 
-        })
-      }))
+      status: 200,
+      json: () => new Promise((resolve, reject) => {
+        resolve(mockFilmData) 
+      })
+    }))
 
     const renderedComponent = await shallow(<App />);
 
@@ -32,11 +34,11 @@ describe('App', () => {
 
   it('initial state starts with default properties', async () => {
     window.fetch = jest.fn().mockImplementation(() => ({
-        status: 200,
-        json: () => new Promise((resolve, reject) => {
-          resolve(mockFilmData) 
-        })
-      }))
+      status: 200,
+      json: () => new Promise((resolve, reject) => {
+        resolve(mockFilmData) 
+      })
+    }));
 
     const renderedComponent = await shallow(<App />);
 
@@ -47,20 +49,20 @@ describe('App', () => {
     expect(renderedComponent.state().film).toEqual({});
   });
 
-  // it('on componentDidMount state films array is set and state film is set to an object', async () => {
-  //   window.fetch = jest.fn().mockImplementation(() => ({
-  //       status: 200,
-  //       json: () => new Promise((resolve, reject) => {
-  //         resolve(mockFilmData) 
-  //       })
-  //     }))
+  it('on componentDidMount state films array is set', async () => {
+    window.fetch = jest.fn().mockImplementation(() => ({
+        status: 200,
+        json: () => new Promise((resolve, reject) => {
+          resolve(mockFilmData) 
+        })
+      }))
 
-  //   const renderedComponent = await shallow(<App />);
+    const renderedComponent = await shallow(<App />);
 
-  //   await expect(window.fetch).toHaveBeenCalled();
+    await renderedComponent.instance().componentDidMount();
 
-  //   expect(renderedComponent.state().films).toEqual(mockCleanFilmData);
-  // })
+    expect(renderedComponent.state().films).toEqual(mockCleanFilmData);
+  })
 
   it('when user first clicks on People nav button and the page is populated with people data and people state array is set', async () => {
     window.fetch = jest.fn().mockImplementation(() => ({

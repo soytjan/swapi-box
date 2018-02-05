@@ -27,17 +27,16 @@ class App extends Component {
     this.getRandomFilm();
   }
 
-  // pass down this function so that you can click SWAPI box and go back to the home page
   getRandomFilm = async () => {
     const films = this.state.films;
-    const randNum = Math.floor(Math.random() * 7);
+    const randNum = Math.floor(Math.random() * films.length);
     const film = films[randNum];
 
     this.setState({ film });
   }
 
   handleNavClick = async (request) => {
-    if(this.state[request].length === 0) {
+    if (this.state[request].length === 0) {
       const swData = await getApiData(request);
 
       this.setState({[request]: swData});
