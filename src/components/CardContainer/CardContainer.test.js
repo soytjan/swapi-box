@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from 'react';
 import { shallow } from 'enzyme';
 import CardContainer from './CardContainer';
@@ -18,7 +20,7 @@ describe('CardContainer', () => {
 
   })
 
-  it.skip('should match snapshot', () => {
+  it('should match snapshot', () => {
     const renderedComponent = shallow(<CardContainer swData={mockData} type='planets' onFavClick={mockFavClick} favorites={[]} />)
 
     expect(renderedComponent).toMatchSnapshot();

@@ -25,20 +25,44 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        "I'm Welcome",
-        <ScrollContainer
+      "children": <ScrollContainer
+        crawl="War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor...."
+        releaseDate="2005-05-19"
+        title="Revenge of the Sith"
+/>,
+      "className": "welcome",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "crawl": "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....",
+        "releaseDate": "2005-05-19",
+        "title": "Revenge of the Sith",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ScrollContainer
           crawl="War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor...."
           releaseDate="2005-05-19"
           title="Revenge of the Sith"
 />,
-      ],
-      "className": "welcome",
-    },
-    "ref": null,
-    "rendered": Array [
-      "I'm Welcome",
-      Object {
+        "className": "welcome",
+      },
+      "ref": null,
+      "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
@@ -51,42 +75,6 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          "I'm Welcome",
-          <ScrollContainer
-            crawl="War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor...."
-            releaseDate="2005-05-19"
-            title="Revenge of the Sith"
-/>,
-        ],
-        "className": "welcome",
-      },
-      "ref": null,
-      "rendered": Array [
-        "I'm Welcome",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "crawl": "War! The Republic is crumbling under attacks by t…ate mission to rescue the captive Chancellor....",
-            "releaseDate": "2005-05-19",
-            "title": "Revenge of the Sith",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
       "type": "div",
     },
   ],
