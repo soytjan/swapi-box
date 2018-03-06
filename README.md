@@ -29,5 +29,13 @@ Run `npm test`.
 
 Amanda Tjan is the software developer for this project.
 
+## Project Layout
+
+Landing Page
+![SWAPI Box Landing Page](https://i.imgur.com/1sJ39jO.png)
+
+People Landing Page
+![SWAPI Box People Landing Page](https://i.imgur.com/b1dlTvR.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
