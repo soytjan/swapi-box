@@ -23,7 +23,7 @@ Run `npm install` and then `npm start`
 
 The testing suite was made using Jest and Enzyme.
 
-Run `npm test` in the repo. 
+Run `npm test`.
 
 ## Contributors
 
